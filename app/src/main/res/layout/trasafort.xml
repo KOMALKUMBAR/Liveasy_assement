@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".TrasafortActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Please select your profile"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="24dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="92dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <RadioButton
+                android:id="@+id/radioShipper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="74dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/baseline_home_work_24" />
+
+            <LinearLayout
+                android:layout_width="231dp"
+                android:layout_height="77dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Shipper"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="205dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="121dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/border"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <RadioButton
+                android:id="@+id/radioTransporter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/baseline_airport_shuttle_24" />
+
+            <LinearLayout
+                android:layout_width="231dp"
+                android:layout_height="77dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Transporter"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="211dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RadioGroup>
+    <Button
+        android:id="@+id/contibubtn"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="CONTINUE"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="24dp"
+        android:background="#2E3B62" />
+</LinearLayout>

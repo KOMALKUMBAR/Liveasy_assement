@@ -1,0 +1,93 @@
+<!-- res/layout/activity_main.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Close button at the top left -->
+
+    <!-- Instructions -->
+    <ImageButton
+        android:layout_width="55sp"
+        android:layout_height="50sp"
+        android:layout_gravity="start"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/close"
+        android:src="@drawable/baseline_close_24"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please enter your mobile number"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="120dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="171dp"
+        android:layout_height="wrap_content"
+        android:text="You'll receive a 6 digit code to verify next."
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- Mobile number input with country code -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:drawable/editbox_background"
+        android:padding="8dp"
+        android:layout_marginTop="16dp">
+
+        <!-- Country flag (using a placeholder here, replace with actual flag image) -->
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="58dp"
+            android:contentDescription="@string/flag"
+            android:src="@drawable/download" />
+
+        <!-- Country code -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+91"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="8dp"
+            android:layout_gravity="center_vertical" />
+
+        <!-- Mobile number input -->
+        <EditText
+            android:id="@+id/mblnumbaer"
+            android:layout_width="0dp"
+            android:layout_height="55sp"
+            android:layout_weight="1"
+            android:hint="Mobile Number"
+            android:inputType="phone"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="8dp"
+            android:background="@null" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/contibubtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONTINUE"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="24dp"
+        android:background="#2E3B62" />
+
+</LinearLayout>

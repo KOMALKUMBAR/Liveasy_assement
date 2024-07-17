@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="custom_button_background">#FF5733</string>
+    <string name="custom_button_text">#FFFFFF</string>
+    <string name="spinner_prompt">Select an item</string>
+
+    <string-array name="eng_array">
+        <item>"Item 1"</item>
+        <item>Item 2</item>
+        <item>Item 3</item>
+    </string-array>
+
+    <string name="close">Close</string>
+    <string name="flag">india</string>
+</resources>

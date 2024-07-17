@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "563531903516",
+    "project_id": "livaesayassement",
+    "storage_bucket": "livaesayassement.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563531903516:android:916f910cc863bb2659a5d9",
+        "android_client_info": {
+          "package_name": "com.android1.livaesayassement"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7yOmrc2a76jD6iVhx6aVJFeDl8HSgkRE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

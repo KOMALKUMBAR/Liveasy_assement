@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_marginTop="100dp"
+        android:id="@+id/tv_verify_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify Phone"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_code_sent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Code is sent to 8094508485"
+        android:layout_below="@id/tv_verify_phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_request_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Didn't receive the code? Request Again"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_code_sent"
+        android:layout_marginBottom="16dp"/>
+
+    <com.chaos.view.PinView
+        android:id="@+id/pinview"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_request_again"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="55sp"
+        android:layout_marginLeft="25sp"
+        android:cursorVisible="true"
+        android:inputType="number"
+        android:itemBackground="@color/white"
+        app:hideLineWhenFilled="false"
+        app:itemCount="6"
+        android:hint="numbaer"
+        android:textSize="20sp"
+        app:itemHeight="50dp"
+        app:itemRadius="10dp"
+        app:itemWidth="50dp" />
+
+    <Button
+        android:id="@+id/VERIFY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VERIFY AND CONTINUE"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/pinview"
+        android:layout_marginTop="24dp"
+        android:background="#2E3B62" />
+</RelativeLayout>
